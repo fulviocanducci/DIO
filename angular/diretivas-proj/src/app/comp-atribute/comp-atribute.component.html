@@ -1,0 +1,13 @@
+<p [ngClass]="style">comp-atribute works!</p>
+<button (click)="toogle()" [ngClass]="style">trocar</button>
+<br />
+
+<h1 [ngStyle]="{'background':'black','color':'white'}">Curso Angular</h1>
+
+<input type="text" [(ngModel)]="item" />
+<button (click)="add()">Add</button>
+<p>{{item}}</p>
+<hr/>
+<ul>
+  <li *ngFor="let c of items; let i = index">{{i}} - {{c}}</li>
+</ul>

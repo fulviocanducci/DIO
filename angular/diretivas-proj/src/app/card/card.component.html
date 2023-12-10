@@ -1,0 +1,8 @@
+<p>card works!</p>
+<ul>
+  <li *ngFor="let product of products; let i = index">{{product}} <button (click)="remove(i)"> X </button></li>
+</ul>
+<div>
+  <input [(ngModel)]="productName" (keydown)="addWithEnter($event)"/>
+  <button (click)="add()"  [disabled]="productName.length === 0">Add</button>
+</div>
